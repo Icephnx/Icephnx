@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héctor Chapa - Experto en China</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background: #002244;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-pic {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            background: url('https://via.placeholder.com/150') no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .portfolio-item {
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            background-color: #eeeeee;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #003366;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #002244;
+        }
+        .language-switcher {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .language-switcher button {
+            background-color: #003366;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .language-switcher button:hover {
+            background-color: #002244;
+        }
+    </style>
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll('[lang]').forEach(element => {
+                element.style.display = element.getAttribute('lang') === lang ? 'block' : 'none';
+            });
+        }
+    </script>
+</head>
+<body onload="changeLanguage('es')">
+    <header>
+        <h1 lang="es">Héctor Chapa</h1>
+        <h1 lang="en" style="display: none;">Héctor Chapa</h1>
+        <h1 lang="zh" style="display: none;">艾哲恩</h1>
+        <p lang="es">Experto en China, su idioma y los negocios</p>
+        <p lang="en" style="display: none;">Expert in China, its language, and business</p>
+        <p lang="zh" style="display: none;">中国及其语言和商业专家</p>
+        <nav>
+            <ul>
+                <li><a href="#bio" lang="es">Bio</a></li>
+                <li><a href="#bio" lang="en" style="display: none;">Bio</a></li>
+                <li><a href="#bio" lang="zh" style="display: none;">简介</a></li>
+                <li><a href="#portfolio" lang="es">Portafolio</a></li>
+                <li><a href="#portfolio" lang="en" style="display: none;">Portfolio</a></li>
+                <li><a href="#portfolio" lang="zh" style="display: none;">产品组合</a></li>
+                <li><a href="#blog" lang="es">Blog</a></li>
+                <li><a href="#blog" lang="en" style="display: none;">Blog</a></li>
+                <li><a href="#blog" lang="zh" style="display: none;">博客</a></li>
+                <li><a href="#contact" lang="es">Contacto</a></li>
+                <li><a href="#contact" lang="en" style="display: none;">Contact</a></li>
+                <li><a href="#contact" lang="zh" style="display: none;">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="language-switcher">
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('zh')">中文</button>
+    </div>
+
+    <main>
+        <section id="bio" class="content" lang="es">
+            <div class="profile-pic"></div>
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Héctor Chapa, experto en cultura y negocios en China. Ofrezco cursos de mandarín para hispanohablantes y cursos de español para profesionales chinos en México. Mi objetivo es crear un puente cultural y de negocios entre China y el mundo hispanohablante.</p>
+            <p>Con más de una década de experiencia, he ayudado a innumerables profesionales y empresas a entender y aprovechar las oportunidades en China. A través de mis cursos y contenido, busco compartir mi conocimiento y pasión por China.</p>
+        </section>
+        <section id="bio" class="content" lang="en" style="display: none;">
+            <div class="profile-pic"></div>
+            <h2>About Me</h2>
+            <p>Hello, I am Héctor Chapa, an expert in Chinese culture and business. I offer Mandarin courses for Spanish speakers and Spanish courses for Chinese professionals in Mexico. My goal is to create a cultural and business bridge between China and the Spanish-speaking world.</p>
+            <p>With over a decade of experience, I have helped countless professionals and companies understand and take advantage of opportunities in China. Through my courses and content, I aim to share my knowledge and passion for China.</p>
+        </section>
+        <section id="bio" class="content" lang="zh" style="display: none;">
+            <div class="profile-pic"></div>
+            <h2>关于我</h2>
+            <p>你好，我是艾哲恩，一位中国文化和商业专家。我为西班牙语者提供普通话课程，为来墨西哥工作的中国专业人士提供西班牙语课程。我的目标是建立中国与西班牙语世界之间的文化和商业桥梁。</p>
+            <p>凭借超过十年的经验，我帮助了无数专业人士和公司了解并利用中国的机会。通过我的课程和内容，我希望分享我对中国的知识和热情。</p>
+        </section>
+
+        <section id="portfolio" class="content" lang="es">
+            <h2>Portafolio de Productos</h2>
+            <div class="portfolio-item">
+                <h3>Curso de Mandarín para Hispanohablantes</h3>
+                <p>Un curso integral diseñado para hispanohablantes que desean aprender mandarín de manera efectiva y práctica.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Curso de Español para Chinos</h3>
+                <p>Curso especializado para profesionales chinos que vienen a trabajar a México, enfocado en el aprendizaje del español y la adaptación cultural.</p>
+            </div>
+        </section>
+        <section id="portfolio" class="content" lang="en" style="display: none;">
+            <h2>Product Portfolio</h2>
+            <div class="portfolio-item">
+                <h3>Mandarin Course for Spanish Speakers</h3>
+                <p>A comprehensive course designed for Spanish speakers who want to learn Mandarin effectively and practically.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Spanish Course for Chinese Professionals</h3>
+                <p>A specialized course for Chinese professionals coming to work in Mexico, focusing on learning Spanish and cultural adaptation.</p>
+            </div>
+        </section>
+        <section id="portfolio" class="content" lang="zh" style="display: none;">
+            <h2>产品组合</h2>
+            <div class="portfolio-item">
+                <h3>西班牙语者的普通话课程</h3>
+                <p>为希望有效且实际地学习普通话的西班牙语者设计的综合课程。</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>中国专业人士的西班牙语课程</h3>
+                <p>为来墨西哥工作的中国专业人士提供的专业课程，重点是学习西班牙语和文化适应。</p>
+            </div>
+        </section>
+
+        <section id="blog" class="content" lang="es">
+            <h2>Blog</h2>
+            <p>Aquí podrás encontrar artículos y noticias interesantes sobre China, su cultura, negocios e idioma. Mantente al día con las últimas tendencias y desarrollos.</p>
+            <!-- Aquí se añadirán los posts del blog -->
+        </section>
+        <section id="blog" class="content" lang="en" style="display: none;">
+            <h2>Blog</h2>
+            <p>Here you can find interesting articles and news about China, its culture, business, and language. Stay up to date with the latest trends and developments.</p>
+            <!-- Blog posts will be added here -->
+        </section>
+        <section id="blog" class="content" lang="zh" style="display: none;">
+            <h2>博客</h2>
+            <p>在这里，您可以找到有关中国及其文化、商业和语言的有趣文章和新闻。了解最新趋势和发展。</p>
+            <!-- 博客文章将添加在这里 -->
+        </section>
+
+        <section id="contact" class="content contact-form" lang="es">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="contact" class="content contact-form" lang="en" style="display: none;">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="contact" class="content contact-form" lang="zh" style="display: none;">
+            <h2>联系</h2>
+            <form>
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">电子邮件:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">留言:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p lang="es">&copy; 2024 Héctor Chapa. Todos los derechos reservados. | <a href="https://www.linkedin.com/in/hector-chapa-%E8%89%BE%E8%97%BB-a2945a83/" target="_blank" style="color: #ffffff;">LinkedIn</a></p>
+        <p lang="en" style="display: none;">&copy; 2024 Héctor Chapa. All rights reserved. | <a href="https://www.linkedin.com/in/hector-chapa-%E8%89%BE%E8%97%BB-a2945a83/" target="_blank" style="color: #ffffff;">LinkedIn</a></p>
+        <p lang="zh" style="display: none;">&copy; 2024 Héctor Chapa. 保留所有权利。 | <a href="https://www.linkedin.com/in/hector-chapa-%E8%89%BE%E8%97%BB-a2945a83/" target="_blank" style="color: #ffffff;">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
